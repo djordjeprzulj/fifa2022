@@ -1,10 +1,19 @@
 package rs.inforce.fifa.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Stadium {
 
+	@Id
 	private Integer id;
 	private String name;
 	private Integer capacity;
+	
+	public Stadium() {
+		
+	}
 	
 	public Stadium(Integer id, String name, Integer capacity) {
 		super();

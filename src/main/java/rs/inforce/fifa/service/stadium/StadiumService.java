@@ -1,12 +1,12 @@
-package rs.inforce.fifa.service;
+package rs.inforce.fifa.service.stadium;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import rs.inforce.fifa.model.Stadium;
 
 public interface StadiumService {
 
-	ArrayList<Stadium> getAll();
+	List<Stadium> getAll();
 	Stadium getById(int id);
 	void add(Stadium newStadium);
 	void update(Stadium stadium);

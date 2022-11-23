@@ -1,12 +1,12 @@
-package rs.inforce.fifa.service;
+package rs.inforce.fifa.service.player;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import rs.inforce.fifa.model.Player;
 
 public interface PlayerService {
 
-	ArrayList<Player> getAll();
+	List<Player> getAll();
 	Player getById(int id);
 	void add(Player newPlayer);
 	void update(Player player);

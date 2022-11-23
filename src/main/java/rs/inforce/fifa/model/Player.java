@@ -1,11 +1,20 @@
 package rs.inforce.fifa.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Player {
 
-	private Integer id;
+	@Id
+	private Integer id;	
 	private String firstName;
 	private String lastName;
 	private Integer number;
+	
+	public Player() {
+		
+	}
 	
 	public Player(Integer id, String firstName, String lastName, Integer number) {
 		super();

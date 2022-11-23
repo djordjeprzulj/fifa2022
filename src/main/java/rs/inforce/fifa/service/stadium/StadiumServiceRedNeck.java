@@ -1,4 +1,4 @@
-package rs.inforce.fifa.service;
+package rs.inforce.fifa.service.stadium;
 
 import java.util.ArrayList;
 import java.util.Iterator;

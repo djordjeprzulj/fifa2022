@@ -1,6 +1,6 @@
 package rs.inforce.fifa.controller;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -13,9 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import rs.inforce.fifa.model.Player;
-import rs.inforce.fifa.model.Stadium;
-import rs.inforce.fifa.service.PlayerService;
-import rs.inforce.fifa.service.StadiumService;
+import rs.inforce.fifa.service.player.PlayerService;
 
 @RestController
 @RequestMapping("/players")
@@ -25,7 +23,7 @@ public class PlayerController {
 	private PlayerService playerService;
 	
 	@GetMapping
-	public ArrayList<Player> getAll() {
+	public List<Player> getAll() {
 		 return playerService.getAll();
 	}
 	
